@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "name": "@nc-developers/ecwid-apps",
+  "workspaces": [
+    "apps/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "lint": "yarn workspaces run lint",
+    "serve": "serve ./",
+    "upgrade": "npm-check-updates --upgrade --target minor && yarn workspaces run upgrade && yarn install"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "brotli-size": "^4.0.0",
+    "chai": "^4.3.7",
+    "cssnano": "^5.1.15",
+    "dotenv": "^16.3.1",
+    "esbuild-envfile-plugin": "^1.0.5",
+    "esbuild": "^0.18.15",
+    "eslint": "^8.45.0",
+    "mocha": "^10.2.0",
+    "npm-check-updates": "^16.10.16",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^10.2.0",
+    "postcss-preset-env": "^7.8.3",
+    "postcss": "^8.4.27",
+    "serve": "^14.2.0",
+    "typescript": "^4.9.5"
+  }
+}
