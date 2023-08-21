@@ -18,21 +18,21 @@ export const onEcwid = (
 		return
 	}
 	// @ts-ignore
-	if (window.Ecwid.OnAPILoaded) {
+	if (window.Ecwid && window.Ecwid.OnAPILoaded) {
 		// @ts-ignore
 		window.Ecwid.OnAPILoaded.add(callback)
 		return
 	}
 	onInteractive(() => {
 		// @ts-ignore
-		if (window.Ecwid.OnAPILoaded) {
+		if (window.Ecwid && window.Ecwid.OnAPILoaded) {
 			// @ts-ignore
 			window.Ecwid.OnAPILoaded.add(callback)
 			return
 		}
 		onComplete(() => {
 			// @ts-ignore
-			if (window.Ecwid.OnAPILoaded) {
+			if (window.Ecwid && window.Ecwid.OnAPILoaded) {
 				// @ts-ignore
 				window.Ecwid.OnAPILoaded.add(callback)
 				return

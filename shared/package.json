@@ -4,18 +4,15 @@
 		"name": "Ron Dekker",
 		"website": "https://rondekker.com"
 	},
-	"name": "@nc-developers/ecwid-aqua8",
+	"name": "@nc-developers/ecwid-shared",
 	"description": "",
 	"keywords": [],
 	"version": "0.0.0",
 	"type": "module",
-	"main": "src/index.ts",
-	"module": "src/index.ts",
-	"types": "src/index.ts",
 	"scripts": {
-		"develop:script": "NODE_ENV=development node config.esbuild.js",
-		"develop:style": "NODE_ENV=development node config.postcss.js",
-		"build": "NODE_ENV=production node config.esbuild.js && NODE_ENV=production node config.postcss.js",
+		"develop:script": "echo 'no development build for package'",
+		"develop:style": "echo 'no development build for package'",
+		"build": "echo 'no build for package'",
 		"lint": "eslint src/**.ts --cache --fix --no-error-on-unmatched-pattern",
 		"upgrade": "npm-check-updates --upgrade --target minor"
 	},

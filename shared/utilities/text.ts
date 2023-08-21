@@ -1,5 +1,5 @@
 export const normalizeName = (
-	name: string
+	name: string,
 ): string => {
 	let result = name.replace(/\s/g, '-')
 	result = result.replace(/[^-_a-zA-Z0-9\[\]]/g, '')
@@ -7,7 +7,7 @@ export const normalizeName = (
 }
 
 export const alphanumericName = (
-	name: string
+	name: string,
 ): string => {
 	let result = name.replace(/\s/g, '-')
 	result = result.replace(/[^-_a-zA-Z0-9]/g, '')

@@ -2,7 +2,7 @@ import build from '../../scripts/esbuild.js'
 
 const files = [{
   from: 'src/index.ts',
-  to: 'dst/aqua8.js',
+  to: 'dst/index.js',
   format: 'iife',
 }]
 
